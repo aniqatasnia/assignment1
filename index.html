@@ -1,4 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Fill in with your solution. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Cat</title>
+    <!-- Bulma CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+    <style>
+      /* Custom class for your 16x9 image */
+      .image-16x9 {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+      }
+      .image-16x9 img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      /* Custom button classes */
+      .button-primary {
+        background-color: #00d1b2;
+        color: white;
+      }
+      .button-link {
+        background-color: #3273dc;
+        color: white;
+      }
+      .button-info {
+        background-color: #209cee;
+        color: white;
+      }
+      .button-success {
+        background-color: #23d160;
+        color: white;
+      }
+      .button-warning {
+        background-color: #ffdd57;
+        color: white;
+      }
+      .button-danger {
+        background-color: #ff3860;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="is-primary">
+      <div class="body">
+        <h1 class="title">Header</h1>
+      </div>
+    </header>
+
+    <!-- Cat Image -->
+    <section class="top">
+      <div class="container">
+        <figure class="image-16x9">
+          <img src="cat.jpg" alt="cat" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="bottom">
+      <div class="container">
+        <div class="columns">
+          <!-- Card 1 -->
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Primary</p>
+              </header>
+              <div class="card-main">
+                <p>I wish I had a cat!</p>
+                <button class="button-primary">Primary Button</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Link</p>
+              </header>
+              <div class="card-content">
+                <p>Cats are an invasive species, but they are so adorable!</p>
+                <button class="button-link">Link Button</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Info</p>
+              </header>
+              <div class="card-content">
+                <p>Beebadoobee</p>
+                <button class="button-info">Info Button</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Success</p>
+              </header>
+              <div class="card-content">
+                <p>Superstitious people are afraid of black cats.</p>
+                <button class="button-success">Success Button</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Warning</p>
+              </header>
+              <div class="card-content">
+                <p>Warning!</p>
+                <button class="button-warning">Warning Button</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Danger</p>
+              </header>
+              <div class="card-content">
+                <p>Caution!</p>
+                <button class="button-danger">Danger Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <a href="mailto:atasnia@ucsc.edu">Aniqa Tasnia</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
